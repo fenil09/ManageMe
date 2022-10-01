@@ -7,8 +7,9 @@
         <entry key="app/src/main/res/drawable/roundedittext.xml" value="0.1" />
         <entry key="app/src/main/res/drawable/roundshape.xml" value="0.194" />
         <entry key="app/src/main/res/layout/activity_animation.xml" value="0.144017094017094" />
-        <entry key="app/src/main/res/layout/activity_login.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.18" />
+        <entry key="app/src/main/res/layout/activity_registration.xml" value="0.2" />
         <entry key="app/src/main/res/layout/animation.xml" value="0.12350427350427351" />
       </map>
     </option>

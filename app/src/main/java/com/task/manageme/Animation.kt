@@ -12,13 +12,31 @@ class Animation : AppCompatActivity() {
         setContentView(R.layout.activity_animation)
       val timer: Timer= Timer()
         timer.schedule(2500){
-            gotologin()
+            gotodestination()
             finish()
         }
+
+
     }
 
-    fun gotologin(){
-        val intent:Intent= Intent(this,Login::class.java)
-        startActivity(intent)
+    fun gotodestination(){
+
+        val data1:String=intent.getStringExtra("activity1").toString()
+        val data2:String=intent.getStringExtra("activity2").toString()
+
+         if(data1=="loginactivity"){
+
+             val intent:Intent=Intent(this,Login::class.java)
+             startActivity(intent)
+         }
+        else{
+            if(data2=="registeractivity"){
+                val intent:Intent=Intent(this,Registration::class.java)
+                startActivity(intent)
+            }
+        }
+        }
+
+
+
     }
-}

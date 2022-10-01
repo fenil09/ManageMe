@@ -55,6 +55,7 @@
               android:layout_centerHorizontal="true"
               android:layout_marginTop="@dimen/_575sdp"
               android:textColor="#228B22"
+              android:id="@+id/textview2"
               android:text="New to ManageMe ? Sign Up"
               android:textSize="@dimen/_20sdp"
               android:textStyle="bold|italic">

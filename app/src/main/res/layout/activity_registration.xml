@@ -5,35 +5,32 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
-        tools:context=".Login">
-
-
+        tools:context=".Registration">
     <androidx.constraintlayout.widget.Guideline android:layout_width="wrap_content" android:layout_height="wrap_content"
-                                                android:id="@+id/guideline2" app:layout_constraintGuide_begin="277dp"
+                                                android:id="@+id/guideline4" app:layout_constraintGuide_begin="277dp"
                                                 android:orientation="horizontal"/>
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_height="0dp"
             android:layout_width="match_parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="0dp" app:layout_constraintTop_toTopOf="parent"
             android:background="@color/black"
-            app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toTopOf="@+id/guideline2"
-            android:id="@+id/constraintLayout">
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/guideline4" android:id="@+id/constraintLayout2">
 
         <ImageView
                 android:layout_width="@dimen/_180sdp"
-                android:layout_height="@dimen/_180sdp" app:srcCompat="@drawable/logo" android:id="@+id/imageView2"
+                android:layout_height="@dimen/_180sdp" app:srcCompat="@drawable/logo" android:id="@+id/imageView4"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="391dp"
+            android:layout_width="match_parent"
+            android:background="@color/white"
             android:layout_height="519dp"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="268dp"
                 android:layout_height="52dp"
@@ -51,10 +48,34 @@
                 android:id="@+id/edit1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.12"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintVertical_bias="0.085"
                 app:layout_constraintHorizontal_bias="0.496"/>
+        <ImageView
+                android:layout_width="41dp"
+                android:layout_height="35dp" app:srcCompat="@drawable/i6" android:id="@+id/imageView6"
+                app:layout_constraintEnd_toEndOf="@+id/edit1"
+                app:layout_constraintStart_toStartOf="@+id/edit1" app:layout_constraintTop_toTopOf="@+id/edit1"
+                app:layout_constraintBottom_toBottomOf="@+id/edit1" app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintVertical_bias="0.529"/>
 
 
+        <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="268dp"
+                android:layout_height="52dp"
+                android:inputType="textPassword"
+                android:hint="Enter your Username"
+                android:textStyle="bold|italic"
+                android:textColorHint="@color/white"
+                android:background="@drawable/roundedittext"
+                android:padding="@dimen/_10sdp"
+                android:paddingStart="@dimen/_50sdp"
+                android:drawablePadding="@dimen/_10sdp"
+                android:textSize="@dimen/_13sdp"
+                android:ems="10"
+                android:id="@+id/edit2"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintVertical_bias="0.244" app:layout_constraintHorizontal_bias="0.496"/>
         <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="268dp"
                 android:layout_height="52dp"
@@ -64,21 +85,28 @@
                 android:textColorHint="@color/white"
                 android:background="@drawable/roundedittext"
                 android:padding="@dimen/_10sdp"
-               android:paddingStart="@dimen/_50sdp"
+                android:paddingStart="@dimen/_50sdp"
                 android:drawablePadding="@dimen/_10sdp"
                 android:textSize="@dimen/_13sdp"
                 android:ems="10"
-                android:id="@+id/edit2"
+                android:id="@+id/edit3"
                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintVertical_bias="0.307" app:layout_constraintHorizontal_bias="0.481"/>
+                app:layout_constraintHorizontal_bias="0.496" app:layout_constraintVertical_bias="0.411"/>
+        <ImageView
+                android:layout_width="41dp"
+                android:layout_height="37dp" app:srcCompat="@drawable/p6" android:id="@+id/imageView7"
+                app:layout_constraintEnd_toEndOf="@+id/edit3"
+                app:layout_constraintStart_toStartOf="@+id/edit3" app:layout_constraintTop_toTopOf="@+id/edit3"
+                app:layout_constraintHorizontal_bias="0.057" app:layout_constraintBottom_toBottomOf="@+id/edit3"
+                app:layout_constraintVertical_bias="0.466"/>
 
 
         <androidx.appcompat.widget.AppCompatButton android:layout_width="254dp"
                                                    android:layout_height="45dp"
                                                    android:layout_centerHorizontal="true"
                                                    android:background="@drawable/roundshape"
-                                                   android:text="Log In"
+                                                   android:text="Register"
                                                    android:id="@+id/button1"
                                                    android:textStyle="bold|italic"
                                                    android:textSize="15sp"
@@ -87,9 +115,9 @@
                                                    app:layout_constraintStart_toStartOf="parent"
                                                    app:layout_constraintBottom_toBottomOf="parent"
                                                    app:layout_constraintTop_toTopOf="parent"
-                                                   app:layout_constraintHorizontal_bias="0.481">
+                                                   app:layout_constraintHorizontal_bias="0.496"
+                                                   app:layout_constraintVertical_bias="0.584">
         </androidx.appcompat.widget.AppCompatButton>
-
         <TextView
                 android:text="Feeling Lazy? Drag the Google Sign In "
                 android:textSize="@dimen/_13sdp"
@@ -100,12 +128,8 @@
                 android:layout_height="52dp" android:id="@+id/textView1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.493"
-                app:layout_constraintVertical_bias="0.715"/>
-
-
-
-
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.543"
+                app:layout_constraintVertical_bias="0.758"/>
         <com.ncorti.slidetoact.SlideToActView android:layout_width="320dp"
                                               android:layout_height="54dp"
                                               app:layout_constraintTop_toTopOf="parent"
@@ -122,33 +146,20 @@
                                               app:text_size="@dimen/_14sdp"
                                               app:area_margin="8dp"
                                               app:icon_margin="8dp"
-                                              app:layout_constraintVertical_bias="0.879"
-                                              app:layout_constraintHorizontal_bias="0.492">
+                                              app:layout_constraintVertical_bias="0.89"
+                                              app:layout_constraintHorizontal_bias="0.493">
 
         </com.ncorti.slidetoact.SlideToActView>
         <ImageView
                 android:layout_width="41dp"
-                android:layout_height="35dp" app:srcCompat="@drawable/i6" android:id="@+id/imageView"
-                app:layout_constraintEnd_toEndOf="@+id/edit1"
-                app:layout_constraintStart_toStartOf="@+id/edit1" app:layout_constraintTop_toTopOf="@+id/edit1"
-                app:layout_constraintBottom_toBottomOf="@+id/edit1" app:layout_constraintHorizontal_bias="0.061"
-                app:layout_constraintVertical_bias="0.529"/>
-        <ImageView
-                android:layout_width="41dp"
-                android:layout_height="37dp" app:srcCompat="@drawable/p6" android:id="@+id/imageView3"
+                android:layout_height="35dp" app:srcCompat="@drawable/man" android:id="@+id/imageView5"
                 app:layout_constraintEnd_toEndOf="@+id/edit2"
-                app:layout_constraintStart_toStartOf="@+id/edit2" app:layout_constraintTop_toTopOf="@+id/edit2"
-                app:layout_constraintBottom_toBottomOf="@+id/edit2" app:layout_constraintHorizontal_bias="0.07"
-                app:layout_constraintVertical_bias="0.466"/>
+                app:layout_constraintStart_toStartOf="@+id/edit2" app:layout_constraintBottom_toBottomOf="@+id/edit2"
+                app:layout_constraintTop_toTopOf="@+id/edit2" app:layout_constraintHorizontal_bias="0.057"
+                app:layout_constraintVertical_bias="0.411"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
