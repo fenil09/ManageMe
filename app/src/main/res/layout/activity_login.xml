@@ -75,6 +75,7 @@
                 app:layout_constraintTop_toTopOf="parent" app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintVertical_bias="0.259" app:layout_constraintHorizontal_bias="0.495"/>
 
+
         <androidx.appcompat.widget.AppCompatButton android:layout_width="254dp"
                                                    android:layout_height="45dp"
                                                    android:layout_centerHorizontal="true"
@@ -88,11 +89,9 @@
                                                    app:layout_constraintStart_toStartOf="parent"
                                                    app:layout_constraintBottom_toBottomOf="parent"
                                                    app:layout_constraintTop_toTopOf="parent"
-                                                   app:layout_constraintHorizontal_bias="0.496"
+                                                   app:layout_constraintHorizontal_bias="0.445"
                                                    app:layout_constraintVertical_bias="0.449">
         </androidx.appcompat.widget.AppCompatButton>
-
-
         <TextView
                 android:text="Feeling Lazy? Drag the Google Sign In "
                 android:textSize="@dimen/_13sdp"
@@ -103,7 +102,7 @@
                 android:layout_height="52dp" android:id="@+id/textView1"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.544"
                 app:layout_constraintVertical_bias="0.653"/>
         <com.ncorti.slidetoact.SlideToActView android:layout_width="320dp"
                                               android:layout_height="54dp"
