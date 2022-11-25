@@ -56,15 +56,10 @@ class Registration : AppCompatActivity(),SlideToActView.OnSlideCompleteListener{
             else{
                 showanimation()
                 addusertoFirebase()
-                Thread(Runnable {
-                    createuser()
-                }).start()
             }
         }
 
         swipe.onSlideCompleteListener=this
-
-
 
 
     }
@@ -85,6 +80,9 @@ class Registration : AppCompatActivity(),SlideToActView.OnSlideCompleteListener{
 
               if(it.isSuccessful){
                   gohome()
+                 Thread(Runnable {
+                     createuser()
+                 }).start()
               }
               else{
                   Toast.makeText(this,"sorry some error occured at server side please try again",Toast.LENGTH_LONG).show()
